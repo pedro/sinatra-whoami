@@ -6,7 +6,7 @@ describe Sinatra::Whoami do
       register Sinatra::Whoami
 
       get "/products/:id/photos" do
-        env["sinatra.path"]
+        env["sinatra.route"]
       end
     }
   end

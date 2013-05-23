@@ -25,7 +25,7 @@ module Sinatra
         if routes = base.routes[@request.request_method]
           routes.each do |pattern, keys, conditions, path, block|
             pass_block = process_route(pattern, keys, conditions) do |*args|
-              @env["sinatra.path"] = path
+              @env["sinatra.route"] = path
               route_eval { block[*args] }
             end
           end
