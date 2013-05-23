@@ -9,7 +9,7 @@ class MyApplication < Sinatra::Base
   register Sinatra::Whoami
 
   after do
-    log :route => env["sinatra.route"] # ie "/products/:id/photos"
+    log route: env["sinatra.route"] # ie "/products/:id/photos"
   end
 end
 ```
