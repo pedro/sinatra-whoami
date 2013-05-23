@@ -1,6 +1,8 @@
 # Sinatra Whoami
 
-Sinatra extension that adds the original route signature to the `sinatra.route` env so that you can log it for better endpoint-specific metrics, monitoring and alerting.
+Extension that adds the original route signature to the `sinatra.route` env so that you can log it for better endpoint-specific metrics, monitoring and alerting.
+
+In Sinatra 2.0 this [won't be necessary](https://github.com/sinatra/sinatra/commit/27434c13d4c8050bc80ef748f8657ac6c6545c8c).
 
 ## Usage
 
