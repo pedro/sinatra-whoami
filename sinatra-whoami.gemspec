@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Pedro Belo"]
   s.email       = ["pedro@heroku.com"]
   s.homepage    = "http://github.com/pedro/sinatra-whoami"
-  s.summary     = %q{Sinatra extension to allow routes to know their path}
-  s.description = %q{Sinatra extension to allow routes to know their path}
+  s.summary     = %q{Sinatra extension to give routes their own path}
+  s.description = %q{Sinatra extension to give routes their own path}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
