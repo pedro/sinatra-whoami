@@ -9,7 +9,7 @@ class HelloApp < Sinatra::Base
   register Sinatra::Whoami
 
   get "/products/:id" do |id|
-    puts "got request to #{whoami}"
+    log "got #{whoami}" # => got /products/:id
     Product.find(id).to_json
   end
 end
