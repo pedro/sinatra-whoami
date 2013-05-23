@@ -16,14 +16,7 @@ module Sinatra
     end
 
     def self.registered(app)
-      app.helpers Helper
       app.send(:include, Router)
-    end
-
-    module Helper
-      def whoami
-        @env["sinatra.path"]
-      end
     end
 
     module Router
